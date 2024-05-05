@@ -2,6 +2,7 @@ import React from 'react';
 import Counter from './components/Counter';
 import Usuario from './components/Usuario';
 import TimerFather from './components/TimerFather';
+import CounterRedu from './components/CounterRedu';
 
 function App() {
   return (
@@ -17,6 +18,10 @@ function App() {
     <h2>useEffect - useRef</h2>
     <hr/>
     <TimerFather />
+
+    <h2>useReducer</h2>
+    <hr/>
+    <CounterRedu/>
     </>
   );
 }
