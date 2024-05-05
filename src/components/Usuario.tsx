@@ -19,7 +19,9 @@ export default function Usuario() {
             <h3>Usuario: useState</h3>
 
 
-            <button className="btn btn-outline-primary">
+            <button
+                onClick={ login }
+                className="btn btn-outline-primary">
                 Login
             </button>
 
