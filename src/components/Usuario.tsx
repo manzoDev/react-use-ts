@@ -24,8 +24,11 @@ export default function Usuario() {
                 className="btn btn-outline-primary">
                 Login
             </button>
-
-            <pre>{JSON.stringify(user)}</pre>
+            {
+                (!user) 
+                ? <pre>No hay usuario</pre>
+                : <pre>{JSON.stringify(user)}</pre>
+            }
 
         </div>
     )
