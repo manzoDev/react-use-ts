@@ -4,6 +4,7 @@ import Usuario from './components/Usuario';
 import TimerFather from './components/TimerFather';
 import CounterRedu from './components/CounterRedu';
 import Formulario from './components/Formulario';
+import FormularioSS from './components/FormularioSeconds';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
     <hr/>
     <Formulario />
     <br/>
+    <FormularioSS/>
     </>
   );
 }
