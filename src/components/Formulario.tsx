@@ -1,20 +1,12 @@
 import { ChangeEvent, useState } from "react"
+import { useForm } from "../hooks/useForm"
 
 export default function Formulario() {
 
-    const [formulario, setFormulario] = useState({
+    const { formulario, handleChange } = useForm({
         email: '',
         name: ''
     });
-
-    const handleChange = ({target}: ChangeEvent<HTMLInputElement>) => {
-        const {name, value} = target;
-
-        setFormulario({
-            ...formulario,
-            [ name ]: value
-        });
-    }
 
     return (
         <form autoComplete="off">
